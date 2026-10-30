@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="bn">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Campus Brilliant — জ্ঞান, অর্জন ও আগামীর বাংলাদেশ।">
+<title>Campus Brilliant | জ্ঞান, অর্জন ও আগামীর বাংলাদেশ</title>
+<style>
+:root{--blue:#0756b5;--deep:#073b78;--pale:#eef5ff;--ink:#17243a;--muted:#66758b;--line:#dce6f2}
+*{box-sizing:border-box}body{margin:0;font-family:system-ui,"Noto Sans Bengali",sans-serif;color:var(--ink);background:#f7f9fc}
+a{color:inherit;text-decoration:none}.top{background:var(--deep);color:white;text-align:center;padding:7px 12px;font-size:13px}
+header{background:white;border-bottom:1px solid var(--line)}.wrap{max-width:1100px;margin:auto;padding:0 16px}
+.brandrow{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:17px 0}
+.brand{display:flex;align-items:center;gap:11px}.logo{width:46px;height:46px;border-radius:12px;background:linear-gradient(135deg,#0876e8,#063b83);color:white;display:grid;place-items:center;font-size:25px;font-weight:800}
+.brand h1{font-size:22px;margin:0;color:var(--deep)}.tag{font-size:12px;color:var(--muted);margin-top:2px}
+.adminlink{border:1px solid var(--line);padding:9px 13px;border-radius:9px;color:var(--blue);font-weight:650;font-size:14px}
+nav{display:flex;gap:22px;overflow:auto;padding:11px 0;border-top:1px solid #edf1f7;white-space:nowrap;font-size:14px;font-weight:650}
+nav a:first-child{color:var(--blue)}
+.hero{margin:20px 0;background:linear-gradient(110deg,#073b78,#0874dc);color:white;border-radius:16px;padding:27px 24px}
+.hero h2{margin:0 0 8px;font-size:25px}.hero p{margin:0;color:#e3efff}
+.sectionhead{display:flex;align-items:center;justify-content:space-between;margin:22px 0 12px}.sectionhead h2{font-size:20px;margin:0}.sectionhead span{font-size:13px;color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.card{background:white;border:1px solid var(--line);border-radius:13px;overflow:hidden}.thumb{height:125px;background:linear-gradient(135deg,#dbeaff,#f1f6ff);display:grid;place-items:center;color:#3975bd;font-size:35px}
+.cardbody{padding:14px}.category{font-size:12px;color:var(--blue);font-weight:750}.card h3{font-size:17px;line-height:1.5;margin:7px 0}.meta{font-size:12px;color:var(--muted)}
+.empty{background:white;border:1px dashed #b8cbe2;border-radius:12px;padding:22px;text-align:center;color:var(--muted);grid-column:1/-1}
+footer{margin-top:34px;background:#092f5d;color:#e8f1ff;padding:25px 0;text-align:center;font-size:13px}
+.panel{display:none;position:fixed;inset:0;background:#f5f8fd;z-index:5;overflow:auto}.panelinner{max-width:760px;margin:auto;padding:18px}.panelbar{display:flex;justify-content:space-between;align-items:center;margin-bottom:16px}.panelbar h2{margin:0;color:var(--deep)}
+button,.btn{border:0;border-radius:9px;padding:11px 15px;background:var(--blue);color:white;font-weight:700;font-size:14px;cursor:pointer}.secondary{background:#e8f1ff;color:var(--deep)}.danger{background:#b42318}
+.formbox,.previewbox{background:white;border:1px solid var(--line);border-radius:13px;padding:16px;margin:12px 0}
+label{display:block;font-weight:650;font-size:14px;margin:12px 0 6px}input,select,textarea{width:100%;padding:11px;border:1px solid #cbd7e6;border-radius:8px;font:inherit;background:white}textarea{min-height:105px;resize:vertical}
+.notice{background:#fff7df;border:1px solid #f1d68c;color:#70551b;padding:12px;border-radius:9px;font-size:13px;line-height:1.6}
+.item{padding:12px 0;border-bottom:1px solid var(--line)}.item:last-child{border:0}
+@media(max-width:700px){.grid{grid-template-columns:1fr}.thumb{height:105px}.hero{padding:22px 18px}.hero h2{font-size:22px}.brand h1{font-size:19px}}
+</style>
+</head>
+<body>
+<div class="top">সর্বশেষ খবর • শিক্ষা • ক্যাম্পাস • বাংলাদেশ</div>
+<header><div class="wrap">
+ <div class="brandrow">
+  <div class="brand"><div class="logo">CB</div><div><h1>Campus Brilliant</h1><div class="tag">জ্ঞান, অর্জন ও আগামীর বাংলাদেশ।</div></div></div>
+  <a class="adminlink" href="#admin" onclick="openAdmin()">অ্যাডমিন</a>
+ </div>
+ <nav><a href="#home">হোম</a><a href="#news">সর্বশেষ</a><a href="#news">শিক্ষা</a><a href="#news">ক্যাম্পাস</a><a href="#news">বাংলাদেশ</a><a href="#news">আন্তর্জাতিক</a><a href="#news">খেলাধুলা</a></nav>
+</div></header>
+<main class="wrap" id="home">
+ <section class="hero"><h2>জ্ঞান, অর্জন ও আগামীর বাংলাদেশ।</h2><p>শিক্ষা, ক্যাম্পাস ও সমসাময়িক খবরের নির্ভরযোগ্য পাঠমঞ্চ।</p></section>
+ <div class="sectionhead" id="news"><h2>সর্বশেষ সংবাদ</h2><span id="count">০টি সংবাদ</span></div>
+ <section class="grid" id="newsGrid"><div class="empty">এখনো কোনো সংবাদ প্রকাশ করা হয়নি। নতুন সংবাদ যোগ করতে অ্যাডমিন প্যানেলে যান।</div></section>
+</main>
+<footer><div class="wrap"><strong>Campus Brilliant</strong><br>জ্ঞান, অর্জন ও আগামীর বাংলাদেশ।<br>© <span id="year"></span> Campus Brilliant. সর্বস্বত্ব সংরক্ষিত।</div></footer>
+
+<section class="panel" id="adminPanel"><div class="panelinner">
+ <div class="panelbar"><h2>Campus Brilliant | অ্যাডমিন</h2><button class="secondary" onclick="closeAdmin()">বন্ধ করুন ✕</button></div>
+ <div class="notice"><b>প্রাথমিক সংস্করণ:</b> এই ডেমোতে সংবাদ এই ব্রাউজারের মধ্যেই সংরক্ষিত হবে। এটি এখনো নিরাপদ অনলাইন অ্যাডমিন ব্যবস্থা নয়; প্রকাশ্য সাইটে বাস্তব ব্যবহারের আগে লগইন ও অনলাইন ডেটাবেজ যুক্ত করতে হবে।</div>
+ <div class="formbox">
+  <h3 style="margin:0;color:var(--deep)">নতুন সংবাদ লিখুন</h3>
+  <label for="title">সংবাদের শিরোনাম</label><input id="title" placeholder="সংবাদের শিরোনাম লিখুন">
+  <label for="category">ক্যাটাগরি</label><select id="category"><option>শিক্ষা</option><option>ক্যাম্পাস</option><option>বাংলাদেশ</option><option>আন্তর্জাতিক</option><option>খেলাধুলা</option></select>
+  <label for="summary">সংক্ষিপ্ত বিবরণ</label><textarea id="summary" placeholder="সংবাদের সংক্ষিপ্ত বিবরণ লিখুন"></textarea>
+  <label for="body">সম্পূর্ণ সংবাদ</label><textarea id="body" placeholder="সম্পূর্ণ সংবাদ লিখুন"></textarea>
+  <button onclick="publish()">সংবাদ যোগ করুন</button>
+ </div>
+ <div class="previewbox"><h3 style="margin-top:0">সংরক্ষিত সংবাদ</h3><div id="adminList">এখনো কোনো সংবাদ নেই।</div></div>
+</div></section>
+<script>
+const KEY="campusBrilliantDemoNews";
+const read=()=>{try{return JSON.parse(localStorage.getItem(KEY)||"[]")}catch(e){return []}};
+function render(){
+ const items=read(), grid=document.getElementById("newsGrid"), list=document.getElementById("adminList");
+ document.getElementById("count").textContent=items.length+"টি সংবাদ";
+ grid.innerHTML=items.length?items.slice().reverse().map(n=>`<article class="card"><div class="thumb">📰</div><div class="cardbody"><div class="category">${esc(n.category)}</div><h3>${esc(n.title)}</h3><p>${esc(n.summary)}</p><div class="meta">${esc(n.date)}</div></div></article>`).join(""):'<div class="empty">এখনো কোনো সংবাদ প্রকাশ করা হয়নি। নতুন সংবাদ যোগ করতে অ্যাডমিন প্যানেলে যান।</div>';
+ list.innerHTML=items.length?items.slice().reverse().map(n=>`<div class="item"><b>${esc(n.title)}</b><div class="meta">${esc(n.category)} • ${esc(n.date)}</div></div>`).join(""):"এখনো কোনো সংবাদ নেই।";
+}
+function esc(s){return String(s||"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]))}
+function publish(){
+ const title=document.getElementById("title").value.trim(),summary=document.getElementById("summary").value.trim(),body=document.getElementById("body").value.trim(),category=document.getElementById("category").value;
+ if(!title||!summary||!body){alert("শিরোনাম, সংক্ষিপ্ত বিবরণ ও সম্পূর্ণ সংবাদ পূরণ করুন।");return}
+ const items=read();items.push({title,summary,body,category,date:new Date().toLocaleDateString("bn-BD")});
+ localStorage.setItem(KEY,JSON.stringify(items));
+ ["title","summary","body"].forEach(id=>document.getElementById(id).value="");render();alert("এই ডেমো ব্রাউজারে সংবাদ যোগ হয়েছে।");
+}
+function openAdmin(){document.getElementById("adminPanel").style.display="block";render()}
+function closeAdmin(){document.getElementById("adminPanel").style.display="none"}
+document.getElementById("year").textContent=new Date().getFullYear();render();
+</script>
+</body></html>
